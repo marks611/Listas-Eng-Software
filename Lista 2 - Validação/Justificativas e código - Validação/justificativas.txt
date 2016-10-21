@@ -1,0 +1,69 @@
+2)
+Não, nenhuma das gen/specs violam o princípio de Liskov, pois todo atendente ou gerente é um usuário, assim como o cartão e o dinheiro são formas de pagamento.
+
+4)
+A gen/spec Usuário não possui Classificação Dinâmica, pois um usuário sempre será do tipo gerente ou do tipo atendente, mas nunca os dois. Porém, a gen/spec FormaPagamento possui Classificação Dinâmica, pois um pagamento pode ser feito em dinheiro e cartão simultaneamente.
+
+6)
+Vantagem: Aumento no desempenho.
+Desvantagem: Queda no encapsulamento e aumento no acoplamento.
+
+8)
+Vantagem: Aumento encapsulamento e queda no acoplamento.
+Desvantagem: Queda no desempenho.
+
+10)
+Vantagem – Economia de memória, pois o objeto só existe em tempo de execução do método.
+Desvantagem – Não é possível reaproveitar o objeto e utilizá-la em outros locais.
+
+12)
+As classes utilizando List foram modeladas para resolver o lado Muitos das relações. Dessa forma, as classes que precisam de vários objetos de outras classes podem agrupá-los em uma única Collection List, que facilita a manipulação. Além disso, as Lists possibilitam a utilização de objetos repetidos.
+
+14)
+As classes utilizando Set foram modeladas para resolver o lado Muitos das relações. Dessa forma, as classes que precisam de vários objetos de outras classes podem agrupá-los em uma única Collection Set, que facilita a manipulação dos objetos. Entretanto, a Collection do tipo Set não permite a repetição de seus objetos, o que a torna mais eficiente para alguns casos.
+
+16)
+A classe parametrizada é uma classe que define outras classes e possui atributos ou operações com a definição feita em função de parâmetros.
+
+A collection são classes que podem conter vários elementos dentro de si, assim como métodos que os tratam. São genéricas por natureza, podendo receber quaisquer dados de qualquer tipo. Para definir um só tipo para a collection, usa-se uma classe parametrizada.
+
+Um multiobjeto é o nome usado pela UML para uma coleção de objetos de uma mesma classe, ou seja, uma collection com tipo já definido, pois já está em tempo de execução.
+
+Ná prática, os três conceitos representam uma coleção de objetos: classe parametrizada no diagrama de classes, collection na programação e multiobjeto no diagrama de sequência. 
+
+17)
+A) Como a classe Venda precisa fazer buscas e alterações no Estoque, ela utiliza alguns métodos do ControleEstoque para isso. Buscando a não-exposição da classe toda, violando o encapsulamento, foi escolhido fazer uma interface que utilizasse somente os métodos importantes da classe ControleEstoque.
+
+B) Para montar o relatório, a classe ControleCaixa precisa receber o histórico de vendas e realizar a consulta de algumas vendas. Foi montada a interface para evitar a exposição da classe inteira de ControleVenda.
+
+C) Para ver se o cliente é cadastrado ou não, a classe de Venda precisa buscar o cliente por meio do CPF. E para ver se o cliente é idoso ou não, precisa utilizar o método de validarIdade. Assim, surge a interface para não expor o controle de cliente inteiramente.
+
+19)
+Delegação 1 – FormaPagamento: Foi criada para tentar resolver o problema de Classificação Dinâmica que surgia na herança.
+
+Delegação 2 – Medicamento: Como nem todo medicamento exige receita, foi criada a delegação Receita, e nela a Retida e Não Retida, pois alguns medicamentos exigem apenas a apresentação da receita e a verificação da validade da receita, e para os que exigem que a receita fique retida, é necessário manter o código dela para que haja um controle das cópias.
+
+21)
+Generalização:
+    Vantagens:
+        - Fácil implementação.
+        - Estática.
+    Desvantagens:
+        - Possível violação do princípio de Liskov.
+        - Violação do encapsulamento.
+
+Realização:
+    Vantagens:
+        - Melhora no encapsulamento.
+        - Melhora no acoplamento.
+    Desvantagens:
+        - Se há apenas uma classe implementando a interface, seu reuso não é favorecido.
+        - Possibilidade de segregação.
+    
+Delegação
+    Vantagens:
+        - O reuso e o compartilhamento é em tempo de execução.
+        - Melhora no encapsulamento.
+    Desvantagens:
+        - Perda de desempenho.
+        - Não pode ser utilizada quando há classes parcialmente abstratas envolvidas.
