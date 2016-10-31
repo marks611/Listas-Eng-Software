@@ -1,0 +1,1 @@
+Nesse diagrama o Observer tem como propósito manter todos os dependentes de venda notificados e atualizados.
