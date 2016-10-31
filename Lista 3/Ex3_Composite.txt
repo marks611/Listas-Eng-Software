@@ -1,0 +1,1 @@
+O padrão Composite é implementado para que seja possível o uso de várias formas de pagamento diferentes em uma mesma venda, através da composição recursiva dos tipos de pagamento.
