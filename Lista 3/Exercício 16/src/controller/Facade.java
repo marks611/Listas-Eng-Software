@@ -1,5 +1,5 @@
 package controller;
-public class Facade {
+public class Facade implements IFacade {
     private ControleCaixa controleCaixa;
     private ControleCliente controleCliente;
     private ControleEstoque controleEstoque;

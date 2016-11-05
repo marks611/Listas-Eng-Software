@@ -1,5 +1,5 @@
 package usuario;
-public class Facade {
+public class Facade implements IFacade {
     private Usuario usuario;
 
 // Code

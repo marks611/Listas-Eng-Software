@@ -1,5 +1,5 @@
 package venda;
-public class Facade {
+public class Facade implements IFacade {
     private Venda venda;
     // Code
 }

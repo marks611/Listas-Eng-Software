@@ -1,5 +1,5 @@
 package medicamento;
-public class Facade {
+public class Facade implements IFacade {
     private Medicamento medicamento;
 
     // Code
