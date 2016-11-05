@@ -1,0 +1,4 @@
+O projeto tem 7 camadas lógicas:
+Apresentação, Aplicação, Integração, Domínio, Serviços técnicos, Persistência e Banco de Dados
+e 4 camadas físicas:
+Apresentação, Aplicação, Integração e Banco de Dados
