@@ -1,4 +1,4 @@
-O projeto tem 7 camadas lógicas:
-Apresentação, Aplicação, Integração, Domínio, Serviços técnicos, Persistência e Banco de Dados
+O projeto tem 12 camadas lógicas:
+Apresentação, Medicamento, Cliente, Venda, Caixa, Usuário, Serviços técnicos, Integração RF, Integração SEFAZ, Integração de Cartão, Persistência e Banco de Dados
 e 4 camadas físicas:
 Apresentação, Aplicação, Integração e Banco de Dados
