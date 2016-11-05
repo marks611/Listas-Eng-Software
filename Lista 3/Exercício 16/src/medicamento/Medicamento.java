@@ -1,4 +1,4 @@
 package medicamento;
-public class medicamento {
+public class Medicamento {
     // Code
 }

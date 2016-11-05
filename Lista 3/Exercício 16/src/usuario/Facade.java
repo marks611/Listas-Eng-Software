@@ -1,4 +1,6 @@
 package usuario;
 public class Facade {
-    // Code
+    private Usuario usuario;
+
+// Code
 }
