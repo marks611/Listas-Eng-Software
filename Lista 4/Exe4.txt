@@ -1,0 +1,3 @@
+Na Sprint #1 serão realizados as funcionalidades de cadastro de clientes e medicamentos e também as opções relacionadas as formas de pagamento
+
+Na Sprint #2 serão realizados as funções de gerenciamento do sistema, sendo eles: a abertura/encerramento de caixas e o controle do estoque, incluindo a entrada e saída de produtos
