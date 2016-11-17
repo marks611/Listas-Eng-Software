@@ -1,6 +1,6 @@
-EstÛria mais f·cil: Concess„o de desconto 1pt
+Est√≥ria mais f√°cil: Concess√£o de desconto 1pt
 
 Manter Cliente - 3pt
 Manter Medicamento - 3pt
 TipoPagamento - 2pt
-Emiss„o Nota Fiscal - 4pt
+Emiss√£o Nota Fiscal - 8pt
