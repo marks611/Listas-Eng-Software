@@ -1,0 +1,43 @@
+public abstract class AbsPagamento {
+	private double desconto;
+	private double valor;
+	public double obterDesconto() {
+		return 0;
+	}
+}
+
+public class Cartão extends AbsPagamento {
+	private int bandeira;
+
+	public double obterDesconto() {
+		return 0;
+	}
+}
+
+public abstract class CriadorPagamento {
+	public AbsPagamento metodoFabrica() {
+		return null;
+	}
+}
+
+public class Dinheiro extends AbsPagamento {
+	public double obterDesconto() {
+		return 0;
+	}
+}
+
+public class Factory extends CriadorPagamento {
+	public AbsPagamento metodoFabrica() {
+		return null;
+	}
+}
+
+public class Venda {
+	private Set<Medicamento> medicamento;
+	private Pedido pedido;
+	private Cliente cliente;
+	private double porcentagemDesconto;
+	private double preco;
+	public void Definir() { }
+	public void obterPagamento(AbsPagamento pgto) {	}
+}

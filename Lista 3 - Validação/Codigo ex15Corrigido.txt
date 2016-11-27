@@ -1,0 +1,28 @@
+package SubsistemaVenda;
+public interface FacadeVenda {
+ 
+	private IVenda iVenda;
+	 
+}
+ 
+package SubsistemaCaixa;
+public interface FacadeCaixa {
+ 
+	private ICaixa iCaixa;
+	 
+}
+ 
+package package0.SubsistemaMedicamento;
+public interface FacadeMedicamento {
+ 
+	private IMedicamento iMedicamento;
+	 
+}
+ 
+package SubsistemaController;
+public interface FacadeController {
+ 
+	private IController iController;
+	 
+}
+ 
